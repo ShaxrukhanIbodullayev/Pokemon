@@ -1,0 +1,116 @@
+body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #FFD845;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.button-bar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+img{
+    width: 350px;
+    height: 145px;
+}
+
+#Sort{
+    width: 140px;
+    height: 30px;
+    font-family: Arial, serif;
+    font-weight: 900;
+    font-size: 11px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+select{
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+button{
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button:nth-child(1){
+    width: 140px;
+    height: 30px;
+}
+
+button:nth-child(2){
+    width: 170px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button:nth-child(4){
+    width: 110px;
+    height: 30px;
+}
+
+.containcard{
+    border: 1px solid black;
+    width: 180px;
+    height: 260px;
+    margin-left: 20px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.pokemontext{
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.pokemonimage{
+    width: 110px;
+    height: 110px;
+    padding: 30px 35px;
+}
+
+h3{
+    margin: 0;
+}
+
+.feature{
+    margin: 0;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+hr{
+    border-color: black;
+    margin: 0;
+}
