@@ -1,5 +1,6 @@
 const pokemoncard = {
-asd:{image: "./Images/004 1.png", name: "Pokemon", feature: "Grass, Poison", weight: "6.9kg", age: "99 age"}
+asd:{image: "./Images/004 1.png", name: "Pokemon", feature: "Grass, Poison", weight: "6.9kg", age: "99 age"},
+asdf:{image: "./Images/Pikachu.png", name: "Pikachu", feature: "Thunder", weight: "5.9kg", age: "27 age"}
 }
 
 const container = document.querySelector(".container")
@@ -47,13 +48,13 @@ for (let i = 0; i < 4; i++){
     const feature = document.createElement("p")
     const pokemonweight = document.createElement("p")
     const pokemonage = document.createElement("p")
-    pokemonimage.src = pokemoncard.image
+    pokemonimage.src = pokemoncard.asdf.image
+    poison.innerText = pokemoncard.asdf.name
+    feature.innerText = pokemoncard.asdf.feature
+    pokemonweight.innerText = pokemoncard.asdf.weight
+    pokemonage.innerText = pokemoncard.asdf.age
     pokemonimage.classList.add("pokemonimage")
     containcard.classList.add("containcard")
-    poison.innerText = pokemoncard.name
-    feature.innerText = pokemoncard.feature
-    pokemonweight.innerText = pokemoncard.weight
-    pokemonage.innerText = pokemoncard.age
     about.classList.add("about")
     feature.classList.add("feature")
     pokemontext.classList.add("pokemontext")
