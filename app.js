@@ -6,6 +6,7 @@ asdf:{image: "./Images/Pikachu.png", name: "Pikachu", feature: "Thunder", weight
 const container = document.querySelector(".container")
 const div = document.createElement("div")
 div.classList.add("Cards")
+container.appendChild(div)
 for (let i = 0; i < 4; i++){
     const containcard = document.createElement("div")
     const pokemonimage = document.createElement("img")
@@ -16,16 +17,22 @@ for (let i = 0; i < 4; i++){
     const about = document.createElement("div")
     const pokemonweight = document.createElement("p")
     const pokemonage = document.createElement("p")
+    const favourite = document.createElement("ion-icon")
+    poison.classList.add("poison")
     pokemonimage.classList.add("pokemonimage")
     containcard.classList.add("containcard")
     about.classList.add("about")
     feature.classList.add("feature")
     pokemontext.classList.add("pokemontext")
+    favourite.setAttribute("name", "heart-outline")
+    favourite.setAttribute("id", "hello")
+    containcard.appendChild(pokemonimage)    
     pokemonimage.src = pokemoncard.asd.image
     poison.innerText = pokemoncard.asd.name
     feature.innerText = pokemoncard.asd.feature
     pokemonweight.innerText = pokemoncard.asd.weight
     pokemonage.innerText = pokemoncard.asd.age
+    poison.appendChild(favourite)
     div.appendChild(containcard)
     containcard.appendChild(pokemonimage)
     containcard.appendChild(horizon)
@@ -36,7 +43,6 @@ for (let i = 0; i < 4; i++){
     about.appendChild(pokemonweight)
     about.appendChild(pokemonage)
 }
-container.appendChild(div)
 
 for (let i = 0; i < 4; i++){
     const containcard = document.createElement("div")
@@ -48,16 +54,21 @@ for (let i = 0; i < 4; i++){
     const feature = document.createElement("p")
     const pokemonweight = document.createElement("p")
     const pokemonage = document.createElement("p")
-    pokemonimage.src = pokemoncard.asdf.image
-    poison.innerText = pokemoncard.asdf.name
-    feature.innerText = pokemoncard.asdf.feature
-    pokemonweight.innerText = pokemoncard.asdf.weight
-    pokemonage.innerText = pokemoncard.asdf.age
+    const favourite = document.createElement("ion-icon")        
+    poison.classList.add("poison")
     pokemonimage.classList.add("pokemonimage")
     containcard.classList.add("containcard")
     about.classList.add("about")
     feature.classList.add("feature")
     pokemontext.classList.add("pokemontext")
+    favourite.setAttribute("name", "heart-outline")
+    favourite.setAttribute("id", "hello")
+    pokemonimage.src = pokemoncard.asdf.image
+    poison.innerText = pokemoncard.asdf.name
+    feature.innerText = pokemoncard.asdf.feature
+    pokemonweight.innerText = pokemoncard.asdf.weight
+    pokemonage.innerText = pokemoncard.asdf.age
+    poison.appendChild(favourite)
     div.appendChild(containcard)
     containcard.appendChild(pokemonimage)
     containcard.appendChild(horizon)
