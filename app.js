@@ -1,7 +1,10 @@
-const pokemoncard = {
-asd:{image: "./Images/004 1.png", name: "Pokemon", feature: "Grass, Poison", weight: "6.9kg", age: "99 age"},
-asdf:{image: "./Images/Pikachu.png", name: "Pikachu", feature: "Thunder", weight: "5.9kg", age: "27 age"}
-}
+const pokemoncard = [
+{image: "./Images/004 1.png", name: "Pokemon", feature: "Grass, Poison", weight: "6.9kg", age: "99 age"},
+{image: "./Images/Pikachu.png", name: "Pikachu", feature: "Thunder", weight: "5.9kg", age: "27 age"}
+]
+
+const pokemonfirst = pokemoncard[0]
+const pokemonsecond = pokemoncard[1]
 
 const container = document.querySelector(".container")
 const div = document.createElement("div")
@@ -27,11 +30,11 @@ for (let i = 0; i < 4; i++){
     favourite.setAttribute("class", "fa-regular fa-heart")
     favourite.setAttribute("id", "hello")
     containcard.appendChild(pokemonimage)    
-    pokemonimage.src = pokemoncard.asd.image
-    poison.innerText = pokemoncard.asd.name
-    feature.innerText = pokemoncard.asd.feature
-    pokemonweight.innerText = pokemoncard.asd.weight
-    pokemonage.innerText = pokemoncard.asd.age
+    pokemonimage.src = pokemonfirst.image
+    poison.innerText = pokemonfirst.name
+    feature.innerText = pokemonfirst.feature
+    pokemonweight.innerText = pokemonfirst.weight
+    pokemonage.innerText = pokemonfirst.age
     poison.appendChild(favourite)
     div.appendChild(containcard)
     containcard.appendChild(pokemonimage)
@@ -73,11 +76,11 @@ for (let i = 0; i < 4; i++){
     pokemontext.classList.add("pokemontext")
     favourite.setAttribute("class", "fa-regular fa-heart")
     favourite.setAttribute("id", "hello")
-    pokemonimage.src = pokemoncard.asdf.image
-    poison.innerText = pokemoncard.asdf.name
-    feature.innerText = pokemoncard.asdf.feature
-    pokemonweight.innerText = pokemoncard.asdf.weight
-    pokemonage.innerText = pokemoncard.asdf.age
+    pokemonimage.src = pokemonsecond.image
+    poison.innerText = pokemonsecond.name
+    feature.innerText = pokemonsecond.feature
+    pokemonweight.innerText = pokemonsecond.weight
+    pokemonage.innerText = pokemonsecond.age
     poison.appendChild(favourite)
     div.appendChild(containcard)
     containcard.appendChild(pokemonimage)
