@@ -79,3 +79,8 @@ for (let i = 0; i < 4; i++){
     about.appendChild(pokemonweight)
     about.appendChild(pokemonage)
 }
+
+
+
+
+
