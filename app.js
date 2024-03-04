@@ -17,14 +17,14 @@ for (let i = 0; i < 4; i++){
     const about = document.createElement("div")
     const pokemonweight = document.createElement("p")
     const pokemonage = document.createElement("p")
-    const favourite = document.createElement("ion-icon")
+    const favourite = document.createElement("i")
     poison.classList.add("poison")
     pokemonimage.classList.add("pokemonimage")
     containcard.classList.add("containcard")
     about.classList.add("about")
     feature.classList.add("feature")
     pokemontext.classList.add("pokemontext")
-    favourite.setAttribute("name", "heart-outline")
+    favourite.setAttribute("class", "fa-regular fa-heart")
     favourite.setAttribute("id", "hello")
     containcard.appendChild(pokemonimage)    
     pokemonimage.src = pokemoncard.asd.image
@@ -42,6 +42,16 @@ for (let i = 0; i < 4; i++){
     pokemontext.appendChild(about)
     about.appendChild(pokemonweight)
     about.appendChild(pokemonage)
+    favourite.addEventListener("click", ()=>{
+        const liked = document.createElement("i")
+        liked.setAttribute("class", "fa-solid fa-heart")
+        poison.appendChild(liked)
+        favourite.style.display = "none"
+        liked.addEventListener("click", ()=>{
+            liked.style.display = "none"
+            favourite.style.display = "block"
+        })
+    })
 }
 
 for (let i = 0; i < 4; i++){
@@ -54,14 +64,14 @@ for (let i = 0; i < 4; i++){
     const feature = document.createElement("p")
     const pokemonweight = document.createElement("p")
     const pokemonage = document.createElement("p")
-    const favourite = document.createElement("ion-icon")        
+    const favourite = document.createElement("i")              
     poison.classList.add("poison")
     pokemonimage.classList.add("pokemonimage")
     containcard.classList.add("containcard")
     about.classList.add("about")
     feature.classList.add("feature")
     pokemontext.classList.add("pokemontext")
-    favourite.setAttribute("name", "heart-outline")
+    favourite.setAttribute("class", "fa-regular fa-heart")
     favourite.setAttribute("id", "hello")
     pokemonimage.src = pokemoncard.asdf.image
     poison.innerText = pokemoncard.asdf.name
@@ -78,9 +88,14 @@ for (let i = 0; i < 4; i++){
     pokemontext.appendChild(about)
     about.appendChild(pokemonweight)
     about.appendChild(pokemonage)
+    favourite.addEventListener("click", ()=>{
+        const liked = document.createElement("i")
+        liked.setAttribute("class", "fa-solid fa-heart")
+        poison.appendChild(liked)
+        favourite.style.display = "none"
+        liked.addEventListener("click", ()=>{
+            liked.style.display = "none"
+            favourite.style.display = "block"
+        })
+    })
 }
-
-
-
-
-

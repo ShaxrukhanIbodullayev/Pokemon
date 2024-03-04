@@ -120,3 +120,8 @@ hr{
     display: flex;
     justify-content: space-between;
 }
+
+.fa-solid{
+    display: none;
+    color: red;
+}
